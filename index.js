@@ -6,4 +6,11 @@ bot.on('guildMemberAdd', member => {
     console.log('Pinged ' + member.user.username + '.');
 })
 
+bot.on('message', message => {
+    if (message.channel.name == 'moderation' && message.content == 'ping') {
+        message.reply('pong');
+    }
+})
+
 bot.login(''); 
+
