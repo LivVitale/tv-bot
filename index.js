@@ -10,6 +10,10 @@ bot.on('message', message => {
     if (message.channel.name == 'moderation' && message.content == 'ping') {
         message.reply('pong');
     }
+    
+    if (message.indexOf('potato') > -1) {
+        message.reply('🥔');
+    }
 })
 
 bot.login(''); 
