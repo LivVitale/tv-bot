@@ -11,7 +11,7 @@ bot.on('message', message => {
         message.reply('pong');
     }
     
-    if (message.indexOf('potato') > -1) {
+    if (message.content.includes('potato')) {
         message.reply('🥔');
     }
 })
